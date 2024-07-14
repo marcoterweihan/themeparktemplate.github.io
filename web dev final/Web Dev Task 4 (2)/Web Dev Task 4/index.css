@@ -1,0 +1,1328 @@
+body {
+  text-align: center;
+  font-family: poppins, sans-serif;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #184e77;
+  color: white;
+  padding: 10px;
+ 
+}
+
+.sticky{
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+
+header p {
+  margin: 0;
+  text-align: left;
+}
+.icons {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin: 0 8px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+  /*position: sticky;
+  top:0;
+  z-index: 1000;  Ensure the nav stays on top */
+  transition: background-color 0.3s, opacity 0.5s, backdrop-filter 0.3s; /* Add transition for smooth opacity change */
+  
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+.nav-right a,
+.nav-right button {
+  margin-left: 20px;
+}
+
+.nav-right a {
+  color: black;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: color 0.5s ease; /*create ease effect when*/
+}
+
+.nav-right a:hover {
+  color: #e98e4c;
+}
+
+.nav-right .book-tickets-btn {
+  background-color: #e98e4c !important;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.nav-right .book-tickets-btn:hover {
+  background-color: #d17c42 !important;
+}
+
+.hero-section {
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 100px 80px;
+  overflow: hidden;
+  background-color: black;
+}
+
+.hero-section .book-now-btn {
+  background-color: #e98e4c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.hero-section .book-now-btn:hover {
+  background-color: #d17c42;
+}
+
+.hero-section video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  z-index: 0; /* Below the content but above the video */
+  opacity: 0.4; /* Black overlay with 50% opacity */
+}
+.hero-section .content {
+  position: relative;
+  z-index: 1;
+}
+.ticket-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+.ticket-section div {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  background-color: #d3cccc;
+  border-radius: 24px;
+  padding: 24px;
+  gap: 32px;
+  width: 100%;
+  justify-content: center;
+}
+
+.ticket-section .input-group-container {
+  width: fit-content;
+  padding: 0px;
+}
+
+.ticket-section select {
+  padding: 12px 24px;
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="%23333" class="size-5"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>'); /* Arrow SVG data */
+  background-repeat: no-repeat;
+  background-position: right 8px center; /* Adjust position */
+}
+
+.ticket-section select:hover {
+  background-color: #f5e0b3;
+  border-color: #e98e4c;
+  color:#333;
+}
+
+.ticket-section select:focus {
+  outline: none;
+  border-color: #e98e4c;
+}
+
+.ticket-section .input-group {
+  display: block;
+  text-align: left;
+  padding: 0px;
+  gap: 8px;
+  width: 300px;
+}
+
+.ticket-section .label {
+  font-weight: bold;
+  color: black;
+  margin: 0px;
+  margin-bottom: 8px;
+}
+
+.ticket-section select,
+.ticket-section input[type="date"] {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.ticket-section input[type="date"] {
+  width: 94%;
+}
+
+.ticket-section input[type="date"]:hover {
+  background-color: #f5e0b3;
+  border-color: #e98e4c;
+  color: #333;
+}
+
+.ticket-section input[type="date"]:focus {
+  outline: none;
+  border-color: #e98e4c;
+}
+
+.ticket-section button {
+  background-color: #e98e4c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.ticket-section button:hover {
+  background-color: #d17c42;
+}
+
+.attractions-section {
+  background-color: #184e77;
+  color: white;
+  padding: 64px 80px;
+  text-align: center;
+}
+
+.attractions-section .title {
+  margin-bottom: 32px;
+}
+
+.attractions-section .title h2 {
+  color: white;
+  margin-top: 0;
+}
+
+.highlight {
+  color: #e98e4c;
+}
+
+.attractions-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);   /* Two columns for larger screens */
+  grid-gap: 32px;
+  padding: 0 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.attractions-grid .big-image {
+  grid-column: 1 / 2;
+  height: 640px;
+  transition: background-color 0.6s ease; /* Add transition when hovered */
+}
+
+.attractions-grid .big-image:hover {
+  background-color: black;
+  border-radius: 15px;
+}
+
+.attractions-grid .big-image img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.hover-text:hover {
+  background-color: transparent !important;
+}
+
+.attractions-grid .big-image .hover-text {
+  visibility: hidden;
+  text-align: left;
+}
+
+.attractions-grid .big-image:hover .hover-text {
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 40%;
+  align-items: flex-start;
+  padding: 0 32px;
+  height: fit-content;
+}
+
+.hover-text h1 {
+  margin: 0;
+}
+
+.attractions-grid .small-images {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 32px;
+}
+
+.attractions-grid .small-images div .hover-text {
+  display: none;
+}
+
+.attractions-grid .small-images div:hover .hover-text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 80%;
+  align-items: flex-start;
+  padding: 0 32px;
+  height: fit-content;
+  text-align: left;
+}
+
+.attractions-grid .small-images div {
+  height: 304px;
+}
+
+.attractions-grid .small-images div:hover {
+  background-color: black;
+  border-radius: 15px;
+  transition: background-color 0.6s ease; /* Add transition when hovered */
+}
+
+.attractions-grid .small-images img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.attractions-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.attractions-grid .big-image:hover img {
+  opacity: 0.4;
+}
+
+.attractions-grid .small-images div:hover img {
+  opacity: 0.4;
+}
+
+.deals-section {
+  padding: 64px 80px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.deals-section-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 32px;
+  gap: 32px;
+}
+
+.deals-section h2 {
+  margin-top: 0;
+}
+
+.deals-section .deals-content {
+  display: flex;
+  gap: 80px;
+  justify-content: space-between;
+}
+
+.deals-section .deals-text {
+  max-width: 50%;
+  text-align: left;
+}
+
+.deals-section .deals-text2 {
+  max-width: 50%;
+  text-align: left;
+}
+
+.deals-section .deals-offers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.deals-section .deals-offers div {
+  text-align: left;
+  width: 47.5%;
+}
+
+.deals-section .deals-offers img {
+  width: 100%;
+  max-height: 258px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.content-section {
+  background-color: #184e77;
+  color: white;
+  padding: 64px 80px;
+}
+
+.content-section h1 {
+  margin-top: 0;
+}
+
+.content-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 32px;
+  column-gap: 80px;
+}
+
+.content-text h1 {
+  text-align: left;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.content-text p {
+  text-align: left;
+}
+
+.content-image img {
+  border-radius: 15px;
+  width: 100%;
+}
+
+.faq-section {
+  padding: 64px 80px;
+  background-color: #f9f9f9;
+}
+
+.faq-section h2 {
+  text-align: center;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.footer {
+  background-color: #184e77;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* General button style for both hero and deals section */
+.book-now-btn {
+  background-color: #e98e4c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.book-now-btn:hover {
+  background-color: #d17c42;
+}
+
+/* MARCO START */
+.bookingsHeaderSection {
+  width: 100%;
+  position: relative;
+}
+
+.bookingsHeaderSection .headerPic {
+  position: absolute;
+  width: 100%;
+  background-image: url("ImageAssets/Booking/ticketbanner.jpeg");
+  background-size: cover;
+  height: 405px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bookingsHeaderSection .overlay {
+  position: absolute;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  opacity: 50%;
+}
+
+.bookingsHeaderSection .content {
+  position: relative;
+  text-align: center;
+  color: white;
+  top: 35%;
+}
+
+.ticketsSection {
+  position: relative;
+  background-color: #184e77;
+  margin-top: 405px;
+}
+
+.ticketsSection h2 {
+  padding: 20px;
+  color: white;
+}
+
+.ticketsSection .flavorText {
+  color: white;
+  margin-bottom: 25px;
+}
+
+.ticketsSection .cardContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.ticketsSection .card {
+  position: relative;
+  width: 325px;
+  background-color: #bbdefb;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rbga(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: transform 0.6 ease;
+  margin-bottom: 20px;
+}
+
+.ticketsSection .card:hover {
+  transform: translateY(-20px);
+}
+
+.ticketsSection .card img {
+  width: 100%;
+  height: 45%;
+}
+
+.ticketsSection .card .textItems {
+  color: #3b3f5c;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.card p {
+  color: gray;
+}
+
+.card .book-now-btn {
+  position: absolute;
+  top: 90%;
+  left: 35%;
+  background-color: #e98e4c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.textItems ul {
+  list-style: none;
+}
+
+.textItems li {
+  padding-right: 10px;
+}
+
+.textItems ul li:before {
+  content: "✓";
+  padding-left: set-padding;
+}
+
+.ticketPromoSection {
+  padding: 20px;
+  background-color: white;
+  color: black;
+}
+
+.ticketPromoSectionGrid {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  margin-top: 80px;
+}
+
+.ticketPromoSectionGrid img {
+  border-radius: 20px;
+  width: 48em; 
+  height: 25em;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+
+.ticketPromoSectionText {
+  margin-left: 60px;
+  text-align: left;
+  position: relative;
+  top: 100px;
+}
+
+.ticketPromoSectionText ul {
+  margin: 0;
+  padding: 0;
+}
+
+.ticketPromoSectionText li {
+  margin: 0;
+  padding: 0 0 0 30px;
+  list-style: none;
+  background-image: url("ImageAssets/Booking/checkmarkimage.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 20px;
+}
+
+.ticketPromoSectionText li {
+  margin-top: 20px;
+  color: rgb(106, 102, 102);
+}
+/* MARCO END*/
+
+/*Ammenities */
+
+.background {
+  background-image: url("ImageAssets/Amenities/Frame 8.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  height:100%;
+}
+
+.hotel, .restaurant, .shop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px auto;
+  padding: 64px 80px;
+}
+
+.hotel {
+  align-items: flex-start;
+}
+
+.hotel p, .overlay-slide .hover-text p {
+  text-align: left;
+}
+
+.restaurant {
+  background-color: #013a63;
+}
+
+.restaurant h3, .white-text {
+  color: white;
+}
+
+.slider div {
+  border-radius: 8px;
+  padding: 10px;
+  box-sizing: border-box;
+  flex: 1;
+  text-align: center;
+  max-width: 100%;
+}
+
+.overlay-slide {
+  display: flex;
+  position: relative;
+  background-color: #000;
+  height: 304px;
+  padding: 0 !important;
+  border-radius: 32px !important;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.overlay-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay-slide:hover img {
+  opacity: 0.4;
+}
+
+.overlay-slide .hover-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.overlay-slide:hover .hover-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.expand-slide img {
+  border-radius: 32px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.expand-slide:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.restaurant img, .shop img, .hotel img {
+  height: auto;
+  max-width: 100%;
+}
+
+.slider {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow: hidden;
+}
+
+.buy-now {
+  background-color: #3a6ea5;
+  color: #fcfcfc;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.background h1{
+    font-size:40px;
+}
+
+
+/* General styles */
+body {
+  text-align: center;
+  font-family: poppins, sans-serif;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #184e77;
+  color: white;
+  padding: 10px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header p {
+  margin: 0;
+  text-align: left;
+}
+
+.icons {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin: 0 8px;
+}
+
+/* General Navigation Bar Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+  transition: background-color 0.3s, opacity 0.5s, backdrop-filter 0.3s;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left img {
+  max-width: 100%;
+  height: auto;
+  transition: max-width 0.3s ease;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right a,
+.nav-right button {
+  margin-left: 20px;
+  color: black;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+.nav-right a:hover {
+  color: #e98e4c;
+}
+
+.nav-right .book-tickets-btn {
+  background-color: #e98e4c !important;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.nav-right .book-tickets-btn:hover {
+  background-color: #d17c42 !important;
+}
+
+/* Mobile View (max-width: 768px) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Reduce font size */
+  }
+
+  .nav-left, .nav-right {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .nav-right {
+    flex-direction: column; /* Stack nav items */
+  }
+
+  .nav-right a, .nav-right button {
+    margin: 10px 0; /* Adjust margin for stacked items */
+  }
+
+  .ticket-section .input-group-container {
+    flex-direction: column; /* Stack elements vertically */
+    gap: 16px; /* Reduce gap for a tighter layout */
+    padding: 16px;
+  }
+
+  .ticket-section select,
+  .ticket-section input[type="date"],
+  .ticket-section button {
+    width: 100%; /* Full width for each input on small screens */
+  }
+
+  .hero-section, .attractions-section, .deals-section, .content-section, .faq-section {
+    padding: 20px 10px; /* Reduce padding */
+  }
+
+  .hero-section .book-now-btn, .deals-section .book-now-btn {
+    padding: 8px 16px; /* Adjust button sizes */
+  }
+
+  .attractions-section {
+    padding: 20px; /* Less padding on smaller screens */
+  }
+
+  .attractions-grid {
+    display: flex; /* Using flexbox for better control */
+    flex-direction: column; /* Stack children vertically */
+    overflow-y: auto; /* Allow vertical scrolling */
+    padding-bottom: 10px;
+    align-items: center; /* Center align the items */
+  }
+
+  .attractions-grid .big-image,
+  .attractions-grid .small-images div {
+    width: 100%; /* Full width for each image */
+    margin-bottom: 20px; /* Space between stacked items */
+    position: relative; /* Ensure hover text is positioned relative to the image */
+  }
+
+  .attractions-grid .small-images {
+    display: flex; /* Using flexbox for better control */
+    flex-direction: column; /* Stack children vertically */
+    width: 100%; /* Full width for each image */
+    align-items: center; /* Center align the items */
+  }
+
+  .attractions-grid img {
+    width: 100%; /* Full width for each image */
+    height: auto; /* Height auto for responsive image scaling */
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  .hover-text {
+    position: absolute;
+    bottom: 20px; /* Align to the bottom of the parent */
+    right: 30px; /* Align to the right of the parent */
+    width: 100%; /* Match the width of the parent image */
+    height: 100%; /* Match the height of the parent image */
+    padding: 10px;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .big-image:hover .hover-text,
+  .small-images div:hover .hover-text {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .deals-section {
+    padding: 20px;
+    text-align: center; /* Center align the text for smaller screens */
+  }
+
+  .deals-section .deals-content,
+  .deals-section .deals-offers div {
+    flex-direction: column; /* Stack all content vertically */
+    align-items: center; /* Center-align content */
+    width: 100%; /* Use full width */
+  }
+
+  .deals-section .deals-text,
+  .deals-section .deals-text2 {
+    max-width: 100%; /* Allow text containers to use full available width */
+    padding: 0 15px; /* Add padding for text for better readability */
+  }
+
+  .deals-section .deals-offers div {
+    width: 100%; /* Ensure div elements use the full width */
+    margin-top: 20px; /* Add some top margin for spacing */
+  }
+
+  .deals-section .deals-offers img {
+    width: 100%; /* Images should scale to fit the width of the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .ticketPromoSectionGrid {
+    flex-direction: column; /* Stack children vertically */
+  }
+
+  .ticketPromoSectionGrid img {
+    position: relative;
+    top: 30px;
+    width: 100%; /* Increase width to take up more viewport width */
+    height: 40vw; /* Adjust height accordingly */
+  }
+
+  .ticketPromoSectionText {
+    margin-left: 20px; /* Reduce margin for smaller screens */
+    top: 20px; /* Adjust top position */
+  }
+
+  .ticketPromoSectionText li {
+    padding-left: 20px; /* Reduce padding for list items */
+  }
+
+  .content-grid {
+    flex-direction: column; /* Stack content sections */
+  }
+
+  .bookingsHeaderSection {
+    width: 100%;
+    position: relative;
+  }
+
+  .bookingsHeaderSection h1 {
+    font-size: 1em;
+  }
+
+  .bookingsHeaderSection .headerPic {
+    position: absolute;
+    width: 100%;
+    background-image: url("ImageAssets/Booking/ticketbanner.jpeg");
+    background-size: cover;
+    height: 205px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .bookingsHeaderSection .overlay {
+    position: absolute;
+    background-color: black;
+    height: 205px;
+    width: 100%;
+    opacity: 50%;
+  }
+
+  .bookingsHeaderSection .content {
+    position: relative;
+    text-align: center;
+    color: white;
+    top: 35%;
+  }
+
+  .ticketsSection {
+    position: relative;
+    background-color: #184e77;
+    margin-top: 205px;
+  }
+
+  .ticketsSection h2 {
+    padding: 20px;
+    color: white;
+  }
+
+  .ticketsSection .flavorText {
+    color: white;
+    margin-bottom: 25px;
+  }
+
+  .ticketsSection .cardContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  .ticketsSection .card {
+    position: relative;
+    width: 100%;
+    background-color: #bbdefb;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden
+  }
+
+  .ticketsSection .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .ticketsSection .card .textItems {
+    color: #3b3f5c;
+    text-align: left;
+    padding: 10px;
+  }
+
+  .card p {
+    color: gray;
+  }
+
+  .card .book-now-btn {
+    position: relative;
+    left: 0px;
+    background-color: #e98e4c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 10px; /* Add some space above the button */
+  }
+}
+
+/* Tablets (Devices with width less than 1024px) */
+@media (max-width: 1092px) {
+  .hero-section, .attractions-section, .deals-section, .content-section, .faq-section {
+    padding: 40px 20px; /* Reduce padding */
+  }
+
+  .nav-right a, .nav-right button {
+    margin-left: 15px; /* Adjust spacing */
+  }
+
+  .hero-section .content {
+    padding-top: 20px; /* Adjust content spacing in hero section */
+  }
+
+  .attractions-grid {
+    grid-template-columns: repeat(2, 1fr); /* Adjust grid columns */
+  }
+
+  .ticketsSection .cardContainer {
+    flex-direction: column; /* Stack cards vertically */
+  }
+
+  .deals-section .deals-content,
+  .deals-section .deals-offers div {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content-grid {
+    flex-direction: column;
+  }
+
+  .hotel, .restaurant, .shop {
+    padding: 32px 40px;
+  }
+
+  .slider {
+    gap: 16px;
+    flex-direction: column;
+  }
+
+  .overlay-slide {
+    height: 220px;
+  }
+
+  .overlay-slide .hover-text {
+    padding-top: 20px;
+  }
+
+  .expand-slide img {
+    border-radius: 8px;
+  }
+
+  .expand-slide:hover {
+    transform: scale(1.05);
+  }
+
+  .background {
+    padding: 30px;
+    height: auto;
+  }
+
+  nav .nav-right a, nav .nav-right button {
+    font-size: 14px;
+    padding: auto;
+  }
+}
+
+/* Small Mobile View (max-width: 480px) */
+@media (max-width: 480px) {
+  .background {
+    padding: 20px;
+    height: 50vh;
+  }
+
+  nav .nav-right a, nav .nav-right button {
+    font-size: 12px;
+  }
+
+  .hotel, .restaurant, .shop {
+    padding: 8px 10px;
+  }
+}
+
+/* Extra Small Mobile View (max-width: 400px) */
+@media (max-width: 400px) {
+  .background {
+    padding: 10px;
+    height: auto;
+  }
+
+  nav .nav-right a, nav .nav-right button {
+    font-size: 10px;
+    padding: auto;
+  }
+
+  .hotel, .restaurant, .shop {
+    padding: 8px 10px;
+    margin: 20px 0;
+  }
+
+  .slider {
+    gap: 8px;
+    flex-direction: column;
+  }
+
+  .overlay-slide {
+    height: 180px;
+  }
+
+  .overlay-slide .hover-text {
+    padding-top: 10px;
+  }
+
+  .expand-slide img {
+    border-radius: 4px;
+  }
+
+  .expand-slide:hover {
+    transform: scale(1.05);
+  }
+
+  .background h1 {
+    font-size: 24px;
+  }
+}
+
+/* Tablet View (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .hero-section, .attractions-section, .deals-section, .content-section, .faq-section {
+    padding: 40px 20px;
+  }
+
+  .nav-right a, .nav-right button {
+    margin-left: 15px;
+  }
+
+  .hero-section .content {
+    padding-top: 20px;
+  }
+
+  .attractions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ticketsSection .cardContainer {
+    flex-direction: column;
+  }
+
+  .deals-section .deals-content,
+  .deals-section .deals-offers div {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content-grid {
+    flex-direction: column;
+  }
+}
+
+/* Responsive for Booking */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .bookingsHeaderSection {
+    width: 100%;
+    position: relative;
+  }
+
+  .bookingsHeaderSection h1 {
+    font-size: 1em;
+  }
+
+  .bookingsHeaderSection .headerPic {
+    position: absolute;
+    width: 100%;
+    background-image: url("ImageAssets/Booking/ticketbanner.jpeg");
+    background-size: cover;
+    height: 205px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .bookingsHeaderSection .overlay {
+    position: absolute;
+    background-color: black;
+    height: 205px;
+    width: 100%;
+    opacity: 50%;
+  }
+
+  .bookingsHeaderSection .content {
+    position: relative;
+    text-align: center;
+    color: white;
+    top: 35%;
+  }
+
+  .ticketsSection {
+    position: relative;
+    background-color: #184e77;
+    margin-top: 205px;
+  }
+
+  .ticketsSection .card:hover {
+    transform: none;
+  }
+}
+
+

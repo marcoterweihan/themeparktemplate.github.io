@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+      <div class = "sticky">
+    <!-- Header Section -->
+    <header>
+      <p> 
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" width="16" height="16" class="icons">
+          <path fill-rule="evenodd" d="m3.855 7.286 1.067-.534a1 1 0 0 0 .542-1.046l-.44-2.858A1 1 0 0 0 4.036 2H3a1 1 0 0 0-1 1v2c0 .709.082 1.4.238 2.062a9.012 9.012 0 0 0 6.7 6.7A9.024 9.024 0 0 0 11 14h2a1 1 0 0 0 1-1v-1.036a1 1 0 0 0-.848-.988l-2.858-.44a1 1 0 0 0-1.046.542l-.534 1.067a7.52 7.52 0 0 1-4.86-4.859Z" clip-rule="evenodd" />
+        </svg>
+        +65 1234568 
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="icons">
+          <path fill-rule="evenodd" d="m7.539 14.841.003.003.002.002a.755.755 0 0 0 .912 0l.002-.002.003-.003.012-.009a5.57 5.57 0 0 0 .19-.153 15.588 15.588 0 0 0 2.046-2.082c1.101-1.362 2.291-3.342 2.291-5.597A5 5 0 0 0 3 7c0 2.255 1.19 4.235 2.292 5.597a15.591 15.591 0 0 0 2.046 2.082 8.916 8.916 0 0 0 .189.153l.012.01ZM8 8.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" clip-rule="evenodd" />
+        </svg>
+        123 Road
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="icons">
+          <path fill-rule="evenodd" d="M1 8a7 7 0 1 1 14 0A7 7 0 0 1 1 8Zm7.75-4.25a.75.75 0 0 0-1.5 0V8c0 .414.336.75.75.75h3.25a.75.75 0 0 0 0-1.5h-2.5v-3.5Z" clip-rule="evenodd" />
+        </svg>
+        Opening Hours : 9am - 6pm Mon - Sun
+      </p>
+    </header>
+
+    <!-- Nav Bar -->
+    <nav>
+      <div class="nav-left">
+        <a href="index.html"><img src="ImageAssets/NavBar/logo.png" alt="logo"/></a>
+      </div>
+      <div class="nav-right">
+        <a href="index.html">Home</a>
+        <a href="Amenities.html">Amenities</a>
+        <a href="Booking.html"><button type="button" class="book-tickets-btn">Book Tickets</button></a>
+      </div>
+    </div>
+    </nav>
+
+    <!-- Hero Section with Background Video -->
+    <div class="hero-section">
+      <video autoplay muted loop>
+        <source src="ImageAssets/Index/herovideo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="content">
+        <h1>Welcome to Water World Themepark</h1>
+        <p>
+          Beat the midweek blues with our Splash and Save Tuesdays! Enjoy 50%
+          off on all admission tickets and special discounts on food and
+          merchandise. <br>It's the perfect opportunity to experience all the
+          thrills of our park at a great price.
+        </p>
+        <p><button type="button" class="book-now-btn">Book Now</button></p>
+      </div>
+
+      <!-- Ticket booking Section -->
+      <section class="ticket-section">
+        <div>
+          <div class="input-group-container">
+            <div class="input-group">
+              <p class="label">Ticket Type:</p>
+              <select id="ticket-type" name="Select Ticket Type">
+                <option value="option 1">1 Day Ticket</option>
+                <option value="option 2">Golden Ticket</option>
+                <option value="option 3">Annual Ticket</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <p class="label">Visit Date:</p>
+              <input type="date" id="visit-date" name="visit-date" />
+            </div>
+
+            <button type="button">Search Now</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Attractions Section -->
+    <section class="attractions-section">
+      <div class="title">
+        <h2>Types of <span class="highlight">Rides</span></h2>
+        <div>
+          <p>
+            Dive into excitement with our diverse selection of water rides! From
+            thrilling slides to relaxing rivers, we have something for everyone.
+          </p>
+        </div>
+      </div>
+
+      <div class="attractions-grid">
+        <div class="big-image">
+          <img src="ImageAssets/Index/jaws.png" alt="Big Attraction" />
+          <div class="hover-text">
+            <h3><span class="highlight">Great White Swing</span></h3>
+            <p>Get ready to soar through the air on the Great White Swing! This shark-themed attraction offers
+              a thrilling swing ride that propels you high above the water, giving you the sensation of being chased by the ocean's apex predator. </p>
+          </div>
+        </div>
+        <div class="small-images">
+          <div>
+            <img src="ImageAssets/Index/boat.jpeg" alt="Small Attraction 1" />
+            <div class="hover-text">
+              <h1><span class="highlight">Pirate's Plunge</span></h1>
+              <p>Embark on Pirate's Plunge! Experience thrilling drops, twists, and splashes through pirate battles and hidden treasure caves. Adventure awaits on the high seas!
+              </p>
+            </div> 
+          </div>
+          <div>
+            <img src="ImageAssets/Index/slide.jpeg" alt="Small Attraction 2" />
+            <div class="hover-text">
+              <h1><span class="highlight">Rainbow Slides</span></h1>
+              <p>Experience zooming through our expertly-engineered Rainbow Slides at record speeds!</p>
+            </div>
+          </div>
+          <div>
+            <img
+              src="ImageAssets/Index/genericwaterpark.jpg"
+              alt="Small Attraction 3"
+            />
+            <div class="hover-text">
+              <h1><span class="highlight">Lazy Lagoon</span></h1>
+              <p>Come rest & relax at the Lazy Lagoon after an adrenaline-filled afternoon at the Water Park!</p>
+            </div>
+          </div>
+          <div>
+            <img src="ImageAssets/Index/raceslide.jpg" alt="Small Attraction 4" />
+            <div class="hover-text">
+              <h1><span class="highlight">Buccaneer Blitz</span></h1>
+              <p>Race down the Buccaneer Blitz slide! Compete with friends through twists, turns, and splashes in a high-speed, thrilling water adventure. Ready, set, slide!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deals Section -->
+    <section class="deals-section">
+      <div class="deals-section-container">
+        <div class="deals-content">
+          <div class="deals-text">
+            <p>Make a Splash with Unbeatable Offers!</p>
+            <h2>Check out our <span class="highlight">Deals</span></h2>
+          </div>
+          <div class="deals-text2">
+            <p>
+              We believe that fun should be affordable for everyone. Take
+              advantage of our amazing deals and make the most of your visit.
+              From discounted tickets to special packages, we have something for
+              everyone. Don’t miss out on these fantastic offers – dive in today
+              and enjoy a day of splashing fun without breaking the bank!
+            </p>
+          </div>
+        </div>
+        <div class="deals-offers">
+          <div>
+            <img src="ImageAssets/Index/elderly.jpeg" alt="deals1" />
+            <h4>Elderly Discount</h4>
+            <p>
+              We value our senior guests and strive to make their visit as
+              enjoyable as possible. That’s why we offer special discounts for
+              our elderly visitors, ensuring that everyone can have a fun-filled
+              day at our park.
+            </p>
+            <p><button type="button" class="book-now-btn">Book Now</button></p>
+          </div>
+          <div>
+            <img src="ImageAssets/Index/soldier.jpeg" alt="deal2" />
+            <h4>Civil Servant Appreciation</h4>
+            <p>
+              We are deeply grateful for the dedication and hard work of our
+              civil servants. To show our appreciation, we offer special
+              benefits to honor those who serve our communities.
+            </p>
+            <p><button type="button" class="book-now-btn">Book Now</button></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content-section">
+      <div class="content-grid">
+        <div class="content-text">
+          <h1>Explore our <span class="highlight">Map</span></h1>
+          <p>
+            Discover all the attractions, dining spots, and amenities Aqua
+            Adventure Park has to offer with our interactive map. Navigate
+            through the park with ease and make the most of your visit.
+          </p>
+        </div>
+        <div class="content-image">
+          <img src="ImageAssets/Index/Lightbox.png" alt="Map" />
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ section -->
+    <section class="faq-section">
+      <h2>FAQs</h2>
+      <p>
+        Find answers to some of the most commonly asked questions about our
+        Park. If you don't see your question here, feel free to contact us for
+        more information.
+      </p>
+      <button class="accordion">
+        Are there any height or age restrictions for the rides?
+      </button>
+      <div class="panel">
+        <p>
+          Yes, for the safety of our guests, certain rides have height and age
+          restrictions. Each ride will have clearly posted signs indicating the
+          requirements. You can also check the restrictions on our website or at
+          the entrance of each ride. If you have any specific concerns, our
+          staff at the park are always available to help.
+        </p>
+      </div>
+
+      <button class="accordion">
+        Can I bring outside food and drinks into the park?
+      </button>
+      <div class="panel">
+        <p>
+          For the safety and enjoyment of all our guests, outside food and
+          drinks are not permitted in the park. However, we offer a variety of
+          dining options within the park to cater to all tastes and dietary
+          needs. Exceptions are made for baby food and guests with specific
+          dietary requirements or medical conditions. Please contact guest
+          services for more details.
+        </p>
+      </div>
+
+      <button class="accordion">
+        What is the route for visitors taking public transport?
+      </button>
+      <div class="panel">
+        <p>
+          Our water park is easily accessible by public transport. You can take
+          bus number X from the city center directly to our entrance. The
+          nearest train station is Y, from which you can take a short bus ride
+          or taxi to the park. Detailed directions and public transport
+          schedules are available on our website.
+        </p>
+      </div>
+
+      <button class="accordion">
+        What do we do/where should we go in the event of an emergency?
+      </button>
+      <div class="panel">
+        <p>
+          In the event of an emergency, please remain calm and follow the
+          instructions of our trained staff. Emergency exits are clearly marked
+          throughout the park. First aid stations are also available, and our
+          medical team is ready to assist with any health concerns. If you
+          notice any suspicious activity or require immediate assistance, please
+          inform the nearest staff member.
+        </p>
+      </div>
+
+      <button class="accordion">
+        Is assistance provided to visitors with disabilities?
+      </button>
+      <div class="panel">
+        <p>
+          Yes, we strive to make our park accessible to all guests. We offer a
+          range of services for visitors with disabilities, including accessible
+          entrances, wheelchair rentals, and designated viewing areas for shows
+          and attractions. Our staff is trained to assist guests with special
+          needs. For more detailed information, please visit our accessibility
+          services page or contact guest services prior to your visit.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>
+        &copy; Water Park. All rights reserved. <a href="#">Privacy Policy</a> |
+        <a href="#">Terms of Service</a> |
+        <a href="#">Cookies Settings</a>
+      </p>
+    </footer>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
